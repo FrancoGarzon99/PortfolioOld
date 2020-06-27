@@ -12,15 +12,21 @@
   --paddingSection:4rem 3rem;
 }
 /*------------------ Body ------------------*/
-/*soft Scrool*/
+/*soft Scroll*/
 html{
     scroll-behavior: smooth;
   }
+/*Edit scroll*/
+body::-webkit-scrollbar{
+  display: none;
+}
+/*Code body*/
 body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    
 }
 /*------------------  Navegation menu ------------------*/
 .app-header{
@@ -99,7 +105,7 @@ main{
   background: none;
   border: 0.125em solid;
   border-image: var(--backgroundGeneral) 1;
-  font-size: 1.125rem;
+  font-size: 1.1em;
   letter-spacing: 0.125em;
   font-weight: 600;
   padding: 0.72em 2.8125em;
@@ -429,7 +435,7 @@ transform: scale(1.07);
   transform: translate(0,-12px);
 }
 .contentFolder .iconFolder{
-  width: 50px;
+  width: 42px;
 }
 .contentFolder .lengLinks{
   display: flex;
@@ -440,11 +446,11 @@ transform: scale(1.07);
   width: 100%;
   display: flex;
   align-content: flex-start;
-  justify-content: end;
+  justify-content: flex-end;
  
 }
 .contentFolder .lengLinks .links .iconsLinks{
-  width: 30px;
+  width: 32px;
   padding-left: 10px;
   transition :all  0.4s ease-in-out;
 }
@@ -512,4 +518,18 @@ footer{
   padding: 2rem 0;
   text-align: center;
   color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .iconsFooter{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .iconsFooter img{
+  width: 3.125em;
+  margin: .6em;
 }
