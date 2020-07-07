@@ -164,6 +164,7 @@ main{
 } 
 .title1 h4{
   font-weight: bold;
+  margin: 0px;
 }
 /*section image present*/
 .imgPresent{
@@ -259,6 +260,7 @@ main{
 }
 .title2 h4{
   font-weight: bold;
+  margin: 0px;
 }
 /*section desing*/
 .my-skills .desingContent{
@@ -409,6 +411,7 @@ transform: scale(1.07);
 }
 .title h4{
   font-weight: bold;
+  margin: 0px;
 }
 
 .my-jobs .contentGeneralFolder{
