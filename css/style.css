@@ -2,14 +2,14 @@
   --colorTwo:#22d3ff;
   --colorFontBlack:#272341;
   --gridGeneral:repeat(12,1fr);
-  --paddingSpace:1.2em 0em;
+  --paddingSpace: 1em 0em;
   --paddingSections: 6.5em  1em;
   --paddingrows:auto;
   --backgroundGeneral:
   /* linear-gradient(to right, #5b86e5,#36d1dc); */
   /* linear-gradient(to left, #00d2ff, #3a7bd5); */
   linear-gradient(to right, #22c5ee,#02f7ff) ; 
-  --paddingSection:4rem 3rem;
+  --paddingSection: 5rem 3rem;
 }
 /*------------------ Body ------------------*/
 /*soft Scroll*/
@@ -515,7 +515,7 @@ transform: scale(1.07);
 .boton3:hover::before{
     transform: scaleX(1);
   }
-/*Footer*/
+/*----------------------- Footer ---------------------------*/
 footer{
   background: #333333;
   padding: 2rem 0;
