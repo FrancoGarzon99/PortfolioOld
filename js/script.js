@@ -7,7 +7,7 @@ let textAnimated = document.querySelector(".typed");
 
 var text = "";
 
-var textArr = ["gusta codear!", "gustan los autos bajitos!", "gusta el desarrollo de aplicaciones"];
+var textArr = ["gusta codear!", "gustan los autos bajitos!", "gusta el desarrollo de aplicaciones", "gusta participar en proyectos copados!"];
 
 var currentTextIndex = -1;
 
