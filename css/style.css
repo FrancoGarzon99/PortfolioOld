@@ -1,36 +1,38 @@
-:root{
-  --colorTwo:#22d3ff;
-  --colorFontBlack:#272341;
-  --gridGeneral:repeat(12,1fr);
+:root {
+  --colorTwo: #22d3ff;
+  --colorFontBlack: #272341;
+  --gridGeneral: repeat(12, 1fr);
   --paddingSpace: 1em 0em;
-  --paddingSections: 6.5em  1em;
-  --paddingrows:auto;
+  --paddingSections: 6.5em 1em;
+  --paddingrows: auto;
   --backgroundGeneral:
   /* linear-gradient(to right, #5b86e5,#36d1dc); */
-  /* linear-gradient(to left, #00d2ff, #3a7bd5); */
-  linear-gradient(to right, #22c5ee,#02f7ff) ; 
+  /* linear-gradient(to left, #00d2ff, #3a7bd5); */ linear-gradient(
+    to right,
+    #22c5ee,
+    #02f7ff
+  );
   --paddingSection: 5rem 3rem;
 }
 /*------------------ Body ------------------*/
 /*soft Scroll*/
-html{
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 /*Edit scroll*/
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 /*Code body*/
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 /*------------------  Navegation menu ------------------*/
-.app-header{
-  padding: 2em  2em;
+.app-header {
+  padding: 2em 2em;
   align-items: center;
   overflow: hidden;
   position: fixed;
@@ -39,61 +41,60 @@ body{
   z-index: 999;
 }
 .contentHeader {
-  grid-column:12;
+  grid-column: 12;
   grid-row: 1;
 }
-.sidenav{
+.sidenav {
   transition: all 0.4s ease;
 }
-.sidenav .user-view{
+.sidenav .user-view {
   background: var(--backgroundGeneral);
 }
-.btn-floating{
-  background:var(--backgroundGeneral);
+.btn-floating {
+  background: var(--backgroundGeneral);
 }
-.btn-floating.btn-large{
+.btn-floating.btn-large {
   width: 3.5em;
   height: 3.5em;
   padding: 0;
 }
-.btn-floating.btn-large i{
+.btn-floating.btn-large i {
   line-height: 3.5rem;
 }
 
 /*------------------ Section Main ------------------*/
-main{
+main {
   display: grid;
   grid-template-columns: var(--gridGeneral);
-  grid-auto-rows:var(--paddingrows);
-  padding: 11rem  1.875em;
+  grid-auto-rows: var(--paddingrows);
+  padding: 11rem 1.875em;
   padding-bottom: 12em;
   align-items: center;
   justify-items: center;
   overflow: hidden;
 }
-.section-main-title{
+.section-main-title {
   grid-column: 1/9;
   grid-row: 1;
   order: 1;
 }
- .imgBackground{
+.imgBackground {
   grid-column: 8/12;
   grid-row: 1;
 }
-.imgBackground img{
+.imgBackground img {
   width: 40em;
-  
-} 
-.section-main-title h1{
+}
+.section-main-title h1 {
   font-size: 2.8125em;
-  letter-spacing: .15rem;
-  text-align:justify;
-  line-height: 5rem;  
-  font-family: 'Poppins';
-  color: var(--colorFontBlack) ;
+  letter-spacing: 0.15rem;
+  text-align: justify;
+  line-height: 5rem;
+  font-family: "Poppins";
+  color: var(--colorFontBlack);
 }
 .section-main-title .txt_gradient {
-  background:var(--backgroundGeneral);
+  background: var(--backgroundGeneral);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
@@ -101,7 +102,7 @@ main{
 }
 
 /*button styles*/
- .ctaPrin{
+.ctaPrin {
   background: none;
   border: 0.125em solid;
   border-image: var(--backgroundGeneral) 1;
@@ -113,142 +114,141 @@ main{
   cursor: pointer;
   transition: color 0.4s linear;
   position: relative;
-  }
-  .ctaPrin:hover{
-    color: #fff;
-  }
-  .ctaPrin::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--backgroundGeneral);
-    z-index: -1;
-    transition: transform 0.4s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
-  }
-  .boton1::before{
-    transform: scaleX(0);
-  }
-  .boton1:hover::before{
-    transform: scaleX(1);
-  }
-
+}
+.ctaPrin:hover {
+  color: #fff;
+}
+.ctaPrin::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--backgroundGeneral);
+  z-index: -1;
+  transition: transform 0.4s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.boton1::before {
+  transform: scaleX(0);
+}
+.boton1:hover::before {
+  transform: scaleX(1);
+}
 
 /*------------------ Section About Me ------------------*/
-.about-me{
+.about-me {
   background: var(--backgroundGeneral);
   /* clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 0); */
   display: grid;
   grid-template-columns: var(--gridGeneral);
-  grid-auto-rows:var(--paddingrows);
+  grid-auto-rows: var(--paddingrows);
   padding: var(--paddingSections);
   justify-items: center;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /*title main about-me*/
- .title1{
+.title1 {
   grid-column: 1/-1;
   grid-row: 1;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-weight: bold;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   text-transform: uppercase;
   color: #fff;
-} 
-.title1 h4{
+}
+.title1 h4 {
   font-weight: bold;
   margin: 0px;
 }
 /*section image present*/
-.imgPresent{
+.imgPresent {
   grid-column: 2/8;
   grid-row: 2;
   padding: 3em 0;
   height: auto;
 }
-.imgPresent img{
+.imgPresent img {
   width: 20em;
   height: 20em;
   border-radius: 50%;
-  border:1px solid rgba(0, 0, 0, 0.1);
- box-shadow: 8px 8px 20px 1px rgba(0, 0, 0, 0.055);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 20px 1px rgba(0, 0, 0, 0.055);
 }
 /*section description skill*/
-.descriptSkill{
-  grid-column:7/11;
+.descriptSkill {
+  grid-column: 7/11;
   grid-row: 2;
   width: 100%;
   padding-top: 2em;
   color: #fff;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   text-align: justify;
   font-weight: 500;
 }
-.descriptSkill .lenguajes{
+.descriptSkill .lenguajes {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.descriptSkill .lenguajes li{
+.descriptSkill .lenguajes li {
   display: flex;
   align-items: center;
 }
 /*butom style 2 */
-.ctaDescript{
-  padding-top: 1rem ;
+.ctaDescript {
+  padding-top: 1rem;
 }
-.ctaDescript .ctaPrin2{
+.ctaDescript .ctaPrin2 {
   background: none;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   padding: 5px 15px;
   font-weight: 600;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
   transition: color 0.4s linear;
   position: relative;
   z-index: 2;
-  }
-.ctaPrin2:hover{
-    color: var(--colorFontBlack);
-  }
-.ctaPrin2::before{
-    content: "";
-    position: absolute;
-	left: 0;
-	top: 0;
-    width: 100%;
-    height: 105%;
-    background:#FFF;
-    z-index: -1;
-    transition: transform 0.4s;
-    transform-origin: 0;
-    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
-  }
-.boton2::before{
-    transform: scaleX(0);
-  }
-.boton2:hover::before{
-    transform: scaleX(1);
-  } 
+}
+.ctaPrin2:hover {
+  color: var(--colorFontBlack);
+}
+.ctaPrin2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 105%;
+  background: #fff;
+  z-index: -1;
+  transition: transform 0.4s;
+  transform-origin: 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.boton2::before {
+  transform: scaleX(0);
+}
+.boton2:hover::before {
+  transform: scaleX(1);
+}
 
 /*------------------  Section Skills ------------------*/
-  
-.grid{
+
+.grid {
   display: grid;
   grid-template-columns: var(--gridGeneral);
-  grid-auto-rows:var(--paddingrows);
+  grid-auto-rows: var(--paddingrows);
   padding: var(--paddingSections);
-  overflow: hidden; 
+  overflow: hidden;
 }
 /*section titletwo*/
-.grid .title2{
+.grid .title2 {
   grid-column: 1/-1;
   grid-row: 1;
   justify-content: center;
@@ -256,21 +256,21 @@ main{
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
-.title2 h4{
+.title2 h4 {
   font-weight: bold;
   margin: 0px;
 }
 /*section desing*/
-.my-skills .desingContent{
+.my-skills .desingContent {
   grid-column: 7/12;
   grid-row: 2;
   padding: var(--paddingSpace);
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
-.my-skills .desingDescript{
-  width: 9.375em ;
+.my-skills .desingDescript {
+  width: 9.375em;
   margin: 1em;
   display: flex;
   justify-items: center;
@@ -288,18 +288,18 @@ main{
   padding: var(--paddingSpace);
 } */
 /*img size*/
-.my-skills img{
+.my-skills img {
   width: 3.6em;
 }
 /*section code*/
-.my-skills .codeContent{
-  grid-column:3/7;
+.my-skills .codeContent {
+  grid-column: 3/7;
   grid-row: 2;
   padding: var(--paddingSpace);
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
-.my-skills .codeDescript{
-  width: 10.625em ;
+.my-skills .codeDescript {
+  width: 10.625em;
   margin: 1em;
   display: flex;
   align-items: center;
@@ -317,17 +317,17 @@ main{
 } */
 
 /*styles progress bar*/
-.my-skills .progress{
-   width: 25rem;
+.my-skills .progress {
+  width: 25rem;
   height: 2em;
-  font-size: .8em;
+  font-size: 0.8em;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 15px;
-  margin: 1.6em .5em;
-  background: #E6E6E6;
+  margin: 1.6em 0.5em;
+  background: #e6e6e6;
   box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.15);
 }
-.my-skills .progress-bar{
+.my-skills .progress-bar {
   background: var(--backgroundGeneral);
   width: 25rem;
   height: 2em;
@@ -343,180 +343,177 @@ main{
 /*------------------  Section jobs ------------------*/
 
 /*section card */
-.my-jobs .contentCard{
+.my-jobs .contentCard {
   grid-column: 2/12;
   grid-row: 2;
 }
-.cardJobs{
- display: grid;
- grid-template-columns:var(--gridGeneral);
- align-items:center;
- overflow: hidden; 
- padding: 5rem 0;
+.cardJobs {
+  display: grid;
+  grid-template-columns: var(--gridGeneral);
+  align-items: center;
+  overflow: hidden;
+  padding: 5rem 0;
 }
-.my-jobs .imgContent{
+.my-jobs .imgContent {
   grid-column: 2/6;
   width: 31.25em;
   order: 0;
 }
 
-.my-jobs .imgJobs{
+.my-jobs .imgJobs {
   max-width: 31.25rem;
   box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   transition: 0.4s ease-in-out;
 }
-.my-jobs .imgJobs:hover{
-transform: scale(1.07);
+.my-jobs .imgJobs:hover {
+  transform: scale(1.07);
 }
-.my-jobs .descriptContent{
+.my-jobs .descriptContent {
   grid-column: 6/12;
   text-align: end;
   position: relative;
   z-index: 10;
 }
 /*section Card 2*/
-.my-jobs .imgContent2{
+.my-jobs .imgContent2 {
   grid-column: 7/12;
 
   order: 0;
   grid-row: 2;
 }
-.my-jobs .descriptContent2{
+.my-jobs .descriptContent2 {
   grid-column: 2/8;
   grid-row: 2;
   position: relative;
   z-index: 10;
 }
-.my-jobs .textDescript{
-  background:var(--backgroundGeneral) ;
+.my-jobs .textDescript {
+  background: var(--backgroundGeneral);
   padding: 1rem 1rem;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 2rem 0rem;
 }
-.lineaDivider{
-    max-width: 10%;
-    color: #fdfdfd;
+.lineaDivider {
+  max-width: 10%;
+  color: #fdfdfd;
 }
 
 /*section folder proyect*/
-.my-jobs .title{
+.my-jobs .title {
   grid-column: 1/-1;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
-.title h4{
+.title h4 {
   font-weight: bold;
   margin: 0px;
 }
 
-.my-jobs .contentGeneralFolder{
- grid-column: 2/12;
+.my-jobs .contentGeneralFolder {
+  grid-column: 2/12;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   position: relative;
   gap: 18px;
   padding-top: 5rem;
-  color: #fff; 
+  color: #fff;
 }
-.my-jobs .contentFolder{
+.my-jobs .contentFolder {
   background: var(--backgroundGeneral);
-  width:100%;
+  width: 100%;
   height: 100%;
   border-radius: 5px;
   padding: 20px 20px;
-  transition :all  0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-.my-jobs .contentFolder h5{
-  font-family: 'Poppins';
+.my-jobs .contentFolder h5 {
+  font-family: "Poppins";
 }
-.contentFolder:hover{
-  transform: translate(0,-12px);
+.contentFolder:hover {
+  transform: translate(0, -12px);
 }
-.contentFolder .iconFolder{
+.contentFolder .iconFolder {
   width: 42px;
 }
-.contentFolder .lengLinks{
+.contentFolder .lengLinks {
   display: flex;
   position: relative;
   margin-bottom: 40px;
 }
-.contentFolder .lengLinks .links{
+.contentFolder .lengLinks .links {
   width: 100%;
   display: flex;
   align-content: flex-start;
   justify-content: flex-end;
- 
 }
-.contentFolder .lengLinks .links .iconsLinks{
+.contentFolder .lengLinks .links .iconsLinks {
   width: 32px;
   padding-left: 10px;
-  transition :all  0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-.contentFolder .iconsLinks:hover{
+.contentFolder .iconsLinks:hover {
   transform: scale(1.15);
 }
-.my-jobs .descriptFolder{
+.my-jobs .descriptFolder {
   width: 100%;
   height: 220px;
 }
 
-
 /*------------------  Section Contact------------------*/
 
-.contact{
-  background:var(--backgroundGeneral);
-
+.contact {
+  background: var(--backgroundGeneral);
 }
-.contact .textContactDescript{
+.contact .textContactDescript {
   grid-column: 1/-1;
   grid-row: 2;
   text-align: center;
   color: #fff;
 }
 /*cta description*/
-.ctaPrin3{
+.ctaPrin3 {
   background: none;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   padding: 5px 15px;
   margin: 20px;
-  font-size:1.375em;
+  font-size: 1.375em;
   font-weight: 500;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
   transition: color 0.4s linear;
   position: relative;
   z-index: 2;
-  }
-  
-.ctaPrin3:hover{
-    color: var(--colorFontBlack);
-  }
-.ctaPrin3::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 105%;
-    background:#FFF;
-    z-index: -1;
-    transition: transform 0.4s;
-    transform-origin: 0;
-    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
-  }
-.boton3::before{
-    transform: scaleX(0);
-  }
-.boton3:hover::before{
-    transform: scaleX(1);
-  }
+}
+
+.ctaPrin3:hover {
+  color: var(--colorFontBlack);
+}
+.ctaPrin3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 105%;
+  background: #fff;
+  z-index: -1;
+  transition: transform 0.4s;
+  transform-origin: 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.boton3::before {
+  transform: scaleX(0);
+}
+.boton3:hover::before {
+  transform: scaleX(1);
+}
 /*----------------------- Footer ---------------------------*/
-footer{
+footer {
   background: #333333;
   padding: 2rem 0;
   text-align: center;
@@ -526,13 +523,13 @@ footer a {
   text-decoration: none;
   color: #fff;
 }
-footer .iconsFooter{
+footer .iconsFooter {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer .iconsFooter img{
+footer .iconsFooter img {
   width: 3.125em;
-  margin: .6em;
+  margin: 0.6em;
 }

@@ -1,223 +1,214 @@
 /*--------------------------Media Queries ----------------------*/
 @media (min-width: 290px) and (max-width: 560px) {
-    /*---------------Section Header---------------*/
-    .app-header{
-        font-size: 8px;
-    }
-    .btn-floating{
-        font-size: 14px;
-    }
-    /*---------------Section main---------------*/
-    main {
-        font-size: 8.5px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: auto;
-            padding:14.1rem 2rem;
-    }
-    .section-main-title h1{
-        letter-spacing: 2px;
-    }
-    .imgBackground img{
+  /*---------------Section Header---------------*/
+  .app-header {
+    font-size: 8px;
+  }
+  .btn-floating {
+    font-size: 14px;
+  }
+  /*---------------Section main---------------*/
+  main {
+    font-size: 8.5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    padding: 14.1rem 2rem;
+  }
+  .section-main-title h1 {
+    letter-spacing: 2px;
+  }
+  .imgBackground img {
     display: none;
-    }
-    /*---------------Section About Me---------------*/
-    .about-me {
-        font-size: 12px;
-        grid-template-columns: repeat(6,1fr);
-        padding:var(--paddingSection);
-    }
-    h4{
+  }
+  /*---------------Section About Me---------------*/
+  .about-me {
+    font-size: 12px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: var(--paddingSection);
+  }
+  h4 {
     font-size: 25px;
-    }
-    .imgPresent{
-        grid-column: 1/-1;
-            grid-row: 2;
-            width: auto;
-            height: auto;
-        }
-    .imgPresent img{
-        width: 15.625rem;
-        height: 15.62rem;
-        }
-    .descriptSkill{
-            grid-column: 1/-1;
-            grid-row: 3;
-            width: 100%;
-            padding-top: 0;
-    }
-    
-    /*---------------Section My Skill---------------*/
-    .my-skills{
-            grid-template-columns: repeat(6,1fr);
-            padding: var(--paddingSection);
-        }
-    .my-skills .desingContent{
-            grid-column: 1/-1;
-            grid-row: 3;
-        }
-    .my-skills .codeContent{
-        grid-column: 1/-1;
-        grid-row: 2;
-        }
-           
-     /* .my-skills .threeDesing{
+  }
+  .imgPresent {
+    grid-column: 1/-1;
+    grid-row: 2;
+    width: auto;
+    height: auto;
+  }
+  .imgPresent img {
+    width: 15.625rem;
+    height: 15.62rem;
+  }
+  .descriptSkill {
+    grid-column: 1/-1;
+    grid-row: 3;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /*---------------Section My Skill---------------*/
+  .my-skills {
+    grid-template-columns: repeat(6, 1fr);
+    padding: var(--paddingSection);
+  }
+  .my-skills .desingContent {
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+  .my-skills .codeContent {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+
+  /* .my-skills .threeDesing{
             width: auto;
         }
     .my-skills .fourCode{
             width: auto;
         } */
-    .my-skills .progress{
-            width: auto;
-        }
-    .my-skills .progress-bar{
-            width: auto;
-        } 
-    
-        /*---------------Section My jobs---------------*/
-    
-    
-    .my-jobs{
-            font-size: 12px;
-            grid-template-columns: repeat(4,1fr);
-            padding: var(--paddingSection);
-        }
-    .my-jobs .contentCard{
-        grid-column: 1/-1;
-        padding: 1rem 1rem;
-    }
-    .my-jobs .cardJobs{
-        grid-template-columns: repeat(4,1fr);
-        padding: 3em;
-    }
-    .my-jobs .imgContent{
-        grid-column: 1/-1;
-        grid-row: 2;
-        max-width: 100%;
-    }
-    .my-jobs .imgContent2{
-        grid-column: 1/-1;
-        grid-row: 2;
-        max-width: 100%;
-    }
-    .my-jobs img{
-        width: 100%;
-    }
-    .my-jobs .descriptContent{
-        grid-column: 1/-1;
-        grid-row:3;
-        text-align: start;
-    }
-    .my-jobs .descriptContent2{
-        grid-column: 1/-1;
-        grid-row:3;
-        text-align: start;
-    }
-    
-    .my-jobs .textDescript h6{
-        margin: 0;
-        font-size: 1.15em;
-    }
-    .lineaDivider{
-        max-width: 50%;
-        color: #fdfdfd;
-    }
-    .my-jobs .contentGeneralFolder{
-        grid-column: 1/-1;
-        grid-row: 4; 
-        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));  
-        padding: 3rem;
-        
-    }
-    .contentGeneralFolder .descriptFolder{
-        width: 100%;
-        height: auto;
-    }
+  .my-skills .progress {
+    width: auto;
+  }
+  .my-skills .progress-bar {
+    width: auto;
+  }
 
-    
-    /*-------------Section Contact----------------*/
-    .contact{
-        font-size: 11px;
-        grid-template-columns: repeat(2,1fr);
-        padding: var(--paddingSection);
-    }
+  /*---------------Section My jobs---------------*/
+
+  .my-jobs {
+    font-size: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: var(--paddingSection);
+  }
+  .my-jobs .contentCard {
+    grid-column: 1/-1;
+    padding: 1rem 1rem;
+  }
+  .my-jobs .cardJobs {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3em;
+  }
+  .my-jobs .imgContent {
+    grid-column: 1/-1;
+    grid-row: 2;
+    max-width: 100%;
+  }
+  .my-jobs .imgContent2 {
+    grid-column: 1/-1;
+    grid-row: 2;
+    max-width: 100%;
+  }
+  .my-jobs img {
+    width: 100%;
+  }
+  .my-jobs .descriptContent {
+    grid-column: 1/-1;
+    grid-row: 3;
+    text-align: start;
+  }
+  .my-jobs .descriptContent2 {
+    grid-column: 1/-1;
+    grid-row: 3;
+    text-align: start;
+  }
+
+  .my-jobs .textDescript h6 {
+    margin: 0;
+    font-size: 1.15em;
+  }
+  .lineaDivider {
+    max-width: 50%;
+    color: #fdfdfd;
+  }
+  .my-jobs .contentGeneralFolder {
+    grid-column: 1/-1;
+    grid-row: 4;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 3rem;
+  }
+  .contentGeneralFolder .descriptFolder {
+    width: 100%;
+    height: auto;
+  }
+
+  /*-------------Section Contact----------------*/
+  .contact {
+    font-size: 11px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--paddingSection);
+  }
 }
 
+@media (min-width: 560px) and (max-width: 1060px) {
+  /*section main*/
+  main {
+    font-size: 11px;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 14.1rem 5rem;
+  }
+  .section-main-title {
+    grid-column: 1/-1;
+  }
+  .imgBackground {
+    display: none;
+  }
+  /*section about me*/
+  .about-me {
+    font-size: 13px;
+  }
+  .imgPresent {
+    grid-column: 1/8;
+    max-width: 60%;
+    align-self: center;
+  }
+  .imgPresent img {
+    width: 100%;
+    height: 100%;
+  }
+  .descriptSkill {
+    grid-column: 7/12;
+    max-width: 100%;
+    padding-top: 2em;
+  }
 
-
-
-    @media (min-width: 560px) and (max-width: 1060px){
-        /*section main*/
-    main{
-        font-size: 11px;
-        grid-template-columns: repeat(6,1fr);
-        padding: 14.1rem 5rem;
-    }
-    .section-main-title{
-        grid-column: 1/-1;
-    }
-    .imgBackground{
-        display: none;
-    }
-    /*section about me*/
-    .about-me{
-        font-size: 13px;
-    }
-    .imgPresent{
-        grid-column: 1/8;
-        max-width: 60%;
-        align-self: center;
-    }
-    .imgPresent img{
-        width: 100%;
-        height: 100%;
-    }
-    .descriptSkill{
-        grid-column:7/12;
-        max-width: 100%;
-        padding-top: 2em;
-    }
-    
-    /*Section My skills*/
-    .my-skills .desingContent{
-        grid-column: 7/12;
-        max-width: 90%;
-    }
-    .my-skills .codeContent{
-        grid-column: 2/7;
-        max-width: 100%;
-    }
-    .my-skills .progress{
-        width: auto;
-    }
-    /* .my-skills .threeDesing{
+  /*Section My skills*/
+  .my-skills .desingContent {
+    grid-column: 7/12;
+    max-width: 90%;
+  }
+  .my-skills .codeContent {
+    grid-column: 2/7;
+    max-width: 100%;
+  }
+  .my-skills .progress {
+    width: auto;
+  }
+  /* .my-skills .threeDesing{
         width: auto;
     }
     .my-skills .fourCode{
         width: auto;
     } */
-    /*Section My Jobs*/
-    .my-jobs .imgContent{
-        grid-column: 1/6;
-        grid-row: 1;
-    }
-    .my-jobs .descriptContent{
-        grid-column: 5/-1;
-        grid-row: 1;
-    }
-    .my-jobs .imgContent2{
-        grid-column: 5/-1;
-        grid-row: 1;
-    }
-    .my-jobs .descriptContent2{
-        grid-column: 1/9;
-        grid-row: 1;
-    }
-    .my-jobs .contentGeneralFolder{
-        grid-column: 1/-1;
-        grid-row: 4;   
-        padding: var(--paddingSection);
-        
-    }
-   
-    }
-    
+  /*Section My Jobs*/
+  .my-jobs .imgContent {
+    grid-column: 1/6;
+    grid-row: 1;
+  }
+  .my-jobs .descriptContent {
+    grid-column: 5/-1;
+    grid-row: 1;
+  }
+  .my-jobs .imgContent2 {
+    grid-column: 5/-1;
+    grid-row: 1;
+  }
+  .my-jobs .descriptContent2 {
+    grid-column: 1/9;
+    grid-row: 1;
+  }
+  .my-jobs .contentGeneralFolder {
+    grid-column: 1/-1;
+    grid-row: 4;
+    padding: var(--paddingSection);
+  }
+}
