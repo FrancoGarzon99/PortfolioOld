@@ -393,6 +393,7 @@ main {
   padding: 1rem 1rem;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 2rem 0rem;
+  border-radius: 5px;
 }
 .lineaDivider {
   max-width: 10%;
